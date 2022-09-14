@@ -13,13 +13,7 @@ import masterlogo from './assets/master-black.svg';
 import payoneerlogo from './assets/payoneer-black.svg';
 import paypallogo from './assets/paypal-black.svg';
 
-import slide1 from './assets/slide-1.jpg';
-import slide2 from './assets/slide-2.jpg';
-import slide3 from './assets/slide-3.jpg';
-import slide4 from './assets/slide-4.jpg';
-import slide6 from './assets/slide-6.jpg';
 import arrR from './assets/arr-r.svg';
-import arrD from './assets/arr-d.svg';
 import wfgLogo from "./assets/wfg-logo.svg";
 import heroSvg from "./assets/hero-img.svg";
 import missionSvg from "./assets/mission.svg";
@@ -42,38 +36,6 @@ import Loader from './assets/grid.js'
 
 function App() {
 
-  const content = [
-    {
-      title: 'Local cards for international Travels',
-      description:
-        'Perform all your transactions in a foreign country, using one card, and your mobile device. Worldwide service.',
-      image: slide6,
-    },
-    {
-      title: 'Travel, shop and pay, anywhere, anytime.',
-      description:
-        'Never have to worry about making local payments again in your destination country.',
-      image: slide3,
-    },
-    {
-      title: "Shopping or touring, we've got you covered.",
-      description:
-        'As an international traveler, shop and pay in local currency without worry and with a safe pre-paid reloadable card.',
-      image: slide2,
-    },
-    {
-      title: 'Limitless possibilities when you travel',
-      description:
-        'Enjoy the flexibility to make numerous payments online and in stores in countries where Welcome finance group is present. Not to worry, we are constantly opening up new countries.',
-      image: slide4,
-    },
-    {
-      title: 'Welcome finance group',
-      description:
-        'Welcome To Your New Destination.',
-      image: slide1,
-    }
-  ];
 
   const [menu, setMenu] = useState(false)
 
@@ -83,25 +45,6 @@ function App() {
 
   const [count, setCount] = useState(0)
 
-  const [state, setState] = useState({
-    name: '',
-    age: '',
-    salary: '',
-    hobby: ''
-  })
-
-  const [steps, setSteps] = useState({
-    step1: false,
-    step2: false,
-    step3: false,
-    step4: false,
-    step5: false,
-    step6: false,
-    step7: false,
-    step8: false,
-    step9: false,
-  })
-
   const setLoad = () => { setCount(count => count + 1); console.log(count) }
 
   useEffect(() => {
@@ -109,17 +52,6 @@ function App() {
 
   }, [])
 
-
-  const changeHandler = (e) => {
-    setState({ ...state, [e.target.name]: e.target.value })
-  }
-
-  const submitHandler = e => {
-    e.preventDefault();
-    console.log(state);
-  }
-
-  const { step1, step2, step3, step4, step5, step6, step7, step8, step9, } = steps
 
   return (
 

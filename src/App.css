@@ -1136,10 +1136,6 @@ a {
   justify-content: space-between;
 }
 
-.audience .audience-img-wrapper .audience-in {
-  background-image: url('./assets/t-1.jpg');
-  box-shadow: 0px 0px 50px 50px #fff8f1 inset;
-}
 
 .block {
   width: 100%;
@@ -1161,11 +1157,6 @@ a {
     justify-content: center;
   }
 
-  .aud-mob {
-    background-image: url("./assets/t-1.jpg");
-    background-size: cover;
-    background-position: center;
-  }
 }
 
 .audience .audience_info {
